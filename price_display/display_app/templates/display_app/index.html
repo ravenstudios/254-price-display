@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'display_app/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'display_app/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">254 Repair Prices</a>
+
+
+
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div id="price-table" class="col ">
+        <table class="striped">
+
+        <tr>
+          {% for p in prices_header %}
+          <th>{{ p }}</th>
+          {% endfor %}
+        </tr>
+
+        {% for price in prices %}
+          <tr>
+            {% for p in price %}
+            <td>{{p}}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center bottom-info">Things to know before repair</h5>
+
+            <p class="light bottom-info">
+
+                <li class="bottom-info">Your Phone will not be waterproof any more</li>
+                <li class="bottom-info">Only Apple has Apple screens</li>
+                <li class="bottom-info">You may recive an error after replacing parts because Apple dosnt want you to fix your phone</li>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center bottom-info">Warranty</h5>
+
+            <p class="light bottom-info">
+              <li class="bottom-info">Phone repairs have a 90 day warranty as long as the screen isnt cracked and no liquid damage</li>
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center bottom-info">Easy to work with</h5>
+
+            <p class="light bottom-info">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'display_app/js/materialize.js' %}"></script>
+  <!-- <script src="{% static 'display_app/js/init.js' %}"></script> -->
+  <script src="{% static 'display_app/js/js.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+
+  </body>
+</html>

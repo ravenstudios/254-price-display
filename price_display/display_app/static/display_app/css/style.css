@@ -1,0 +1,14 @@
+table{
+  background-image: linear-gradient(to bottom right, CornflowerBlue, grey);
+  color:white
+}
+
+.bottom-info{
+  background-image: linear-gradient(to bottom right, CornflowerBlue, grey);
+}
+body{
+  /* background-image: url("https://previews.123rf.com/images/maxxyustas/maxxyustas1411/maxxyustas141100022/33372204-mobile-phones-background-pile-of-different-modern-smartphones-3d.jpg"); */
+  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/10D90/production/_92080096_iphone_istock.jpg"); */
+
+  https://ichef.bbci.co.uk/news/976/cpsprodpb/10D90/production/_92080096_iphone_istock.jpg
+}
